@@ -1,0 +1,34 @@
+@use "variables";
+
+@mixin container {
+  max-width: variables.$container-width;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.container {
+  @include container();
+}
+
+@mixin flex-center($justify: center, $direction: row, $wrap: no-wrap) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: center;
+  flex-wrap: $wrap;
+}
+
+@mixin font-xl {
+  font: bold 4rem / 1 "Libre Baskerville", serif;
+}
+
+@mixin responsive($breakpoint) {
+  @if map-has-key(variables.$breakpoints, $breakpoint) {
+    @media #{inspect(map-get(variables.$breakpoints, $breakpoint))} {
+      @content;
+    }
+  } @else {
+    @error 'No value found for `#{$breakpoint}`. '
+         + 'Please make sure it is defined in `$breakpoints` map.';
+  }
+}

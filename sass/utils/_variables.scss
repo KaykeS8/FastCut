@@ -1,0 +1,127 @@
+$c1: #ffffff;
+$c2: #f5f5f5;
+$c3: #e0e0e0;
+$c4: #cccccc;
+$c5: #b8b8b8;
+$c6: #a3a3a3;
+$c7: #8f8f8f;
+$c8: #7a7a7a;
+$c9: #666666;
+$c10: #525252;
+$c11: #3d3d3d;
+$c12: #292929;
+$c14: #141414;
+$c15: #000000;
+
+$p1: #ad957a;
+$p2: #99836c;
+$container-width: 1200px;
+
+.cor-1 {
+  color: $c1;
+}
+.cor-2 {
+  color: $c2;
+}
+.cor-3 {
+  color: $c3;
+}
+.cor-4 {
+  color: $c4;
+}
+.cor-5 {
+  color: $c5;
+}
+.cor-6 {
+  color: $c6;
+}
+.cor-7 {
+  color: $c7;
+}
+.cor-8 {
+  color: $c8;
+}
+.cor-9 {
+  color: $c9;
+}
+.cor-10 {
+  color: $c10;
+}
+.cor-11 {
+  color: $c11;
+}
+.cor-12 {
+  color: $c12;
+}
+
+.cor-14 {
+  color: $c14;
+}
+.cor-15 {
+  color: $c15;
+}
+
+.cor-p1 {
+  color: $p1;
+}
+
+.cor-p2 {
+  color: $p2;
+}
+
+$breakpoints: (
+  "md": (
+    max-width: 800px,
+  ),
+  "sm": (
+    max-width: 600px,
+  ),
+  "xsm": (
+    max-width: 400px,
+  ),
+);
+
+.logo {
+  font-size: 2rem;
+  color: $c1;
+  font-family: "Libre Baskerville";
+  text-transform: uppercase;
+  width: max-content;
+}
+
+.botao {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: $p2;
+  color: $c15;
+  font-family: "Poppins", sans-serif;
+  transition: 0.4s;
+
+  &:hover {
+    background-color: $p1;
+  }
+}
+
+.botao.inline {
+  border: 1px solid $c1;
+  background: none;
+  padding: 5px 10px;
+  color: $c1;
+  font-family: "Poppins", sans-serif;
+  transition: 0.4s;
+
+  &:hover {
+    background-color: $c1;
+    color: $c15;
+  }
+}
+
+.botao.inline-p {
+  border: 1px solid $p1;
+  background: none;
+  color: $c1;
+}
+
+.font-1-x {
+  font: 400 1.125rem/1.5 "Poppins", sans-serif;
+}
