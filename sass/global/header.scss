@@ -1,0 +1,71 @@
+@use "../utils/mixin";
+@use "../utils/variables";
+
+.header-bg {
+  background-color: variables.$c15;
+  padding: 40px 0;
+  transition: 0.4s;
+
+  .header {
+    @include mixin.flex-center(space-between, "", wrap);
+
+    ul {
+      @include mixin.flex-center();
+      font-size: 1.125rem;
+      font-family: "Poppins";
+      gap: 20px;
+
+      a:hover {
+        color: variables.$p2;
+      }
+    }
+
+    ul::before {
+      content: "";
+      display: block;
+      width: 2px;
+      height: 40px;
+      background-color: variables.$c1;
+    }
+  }
+
+  .header > div {
+    @include mixin.flex-center;
+    gap: 15px;
+  }
+
+  @include mixin.responsive("md") {
+    .header {
+      ul::before {
+        display: none;
+      }
+
+      .header-divider {
+        display: none;
+      }
+    }
+  }
+
+  @include mixin.responsive("sm") {
+    .header {
+      text-align: left;
+    }
+    .header > div {
+      flex-direction: column;
+      align-items: normal;
+    }
+  }
+
+  @include mixin.responsive("xsm") {
+    .header {
+      .logo {
+        text-align: left;
+      }
+
+      ul {
+        font-size: 1rem;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
