@@ -1,0 +1,21 @@
+@use "../utils/mixin";
+@use "../utils/variables";
+
+.subheader-bg {
+  background-color: variables.$c14;
+  padding: 20px 0;
+
+  .subheader {
+    @include mixin.flex-center(space-between, row, wrap);
+    gap: 16px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: regular;
+  }
+
+  @include mixin.responsive("xsm") {
+    .subheader {
+      gap: 10px;
+    }
+  }
+}
