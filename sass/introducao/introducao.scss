@@ -4,7 +4,6 @@
 .introducao-bg {
   background-color: variables.$c15;
   padding: 120px 0;
-  color: #ddd;
 
   .introducao {
     display: grid;
@@ -40,10 +39,80 @@
         li div:nth-child(1) {
           font-size: 2rem;
           font-weight: bold;
+          color: variables.$c1;
         }
 
         div {
           font-family: "Poppins", sans-serif;
+          color: variables.$c5;
+        }
+      }
+    }
+
+    .introducao-image img {
+      object-fit: cover;
+      height: 100%;
+    }
+  }
+
+  @include mixin.responsive("md") {
+    padding: 60px 0;
+
+    .introducao {
+      grid-template-columns: 1fr;
+
+      .introducao-conteudo {
+        h1 {
+          font-size: 3rem;
+        }
+
+        p {
+          font-size: 1rem;
+        }
+      }
+      .introducao-image {
+        display: none;
+      }
+    }
+  }
+
+  @include mixin.responsive("sm") {
+    .introducao {
+      .introducao-conteudo {
+        h1 {
+          font-size: 2rem;
+          line-height: 1.2;
+        }
+        .introducao-btns {
+          flex-direction: column;
+
+          a {
+            font-size: 1.125rem;
+          }
+        }
+
+        .introducao-info {
+          flex-wrap: wrap;
+
+          li {
+            flex: 1;
+          }
+
+          li div:nth-child(1) {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: variables.$c1;
+          }
+        }
+      }
+    }
+  }
+
+  @include mixin.responsive("xsm") {
+    .introducao {
+      .introducao-conteudo {
+        .introducao-info {
+          gap: 20px;
         }
       }
     }
