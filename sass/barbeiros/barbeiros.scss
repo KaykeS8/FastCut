@@ -1,0 +1,45 @@
+@use "../utils/variables";
+@use "../utils/mixin";
+
+.barbeiros {
+  margin-bottom: 120px;
+  .barbeiros-group {
+    @include mixin.flex-center(center, row, wrap);
+    position: relative;
+    gap: 60px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: inline-block;
+      height: 100px;
+      width: calc(100vw - 20px);
+      background-color: variables.$p1;
+      z-index: -1;
+    }
+
+    .barbeiros-item {
+      @include mixin.flex-center(center, column);
+      gap: 10px;
+      color: #fff;
+
+      span {
+        font-family: variables.$font-1;
+        font-weight: 600;
+        width: max-content;
+        font-size: 18px;
+      }
+
+      .barbeiros-exp {
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+
+    @media (max-width: 900px) {
+      &::before {
+        display: none;
+      }
+    }
+  }
+}
