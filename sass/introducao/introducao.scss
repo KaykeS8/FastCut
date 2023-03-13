@@ -11,7 +11,6 @@
     gap: 40px;
 
     .introducao-conteudo {
-      // align-self: end;
       h1 {
         @include mixin.font-xl;
         margin-bottom: 20px;
@@ -92,7 +91,7 @@
 
         .introducao-info {
           flex-wrap: wrap;
-
+          gap: 40px;
           li {
             flex: 1;
           }
