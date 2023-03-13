@@ -4,29 +4,6 @@
 .servicos {
   padding-top: 60px;
   padding-bottom: 60px;
-  h2 {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    font: bold 3rem/1 "Libre Baskerville", sans-serif;
-    margin-bottom: 60px;
-
-    &::before {
-      content: "";
-      display: inline-block;
-      width: 100px;
-      height: 6px;
-      background-color: variables.$p1;
-    }
-
-    @include mixin.responsive("sm") {
-      font-size: 2rem;
-      margin-bottom: 40px;
-      &::before {
-        display: none;
-      }
-    }
-  }
 
   .servicos-image {
     @include mixin.flex-center(space-between, "", wrap);
@@ -35,7 +12,6 @@
 
     div {
       position: relative;
-      width: 360px;
       overflow: hidden;
       cursor: pointer;
     }
@@ -99,6 +75,7 @@
     div {
       display: flex;
       justify-content: space-between;
+      align-items: center;
       margin-bottom: 5px;
     }
 
@@ -112,7 +89,7 @@
     span {
       font: 600 1.125rem/1 variables.$font-1;
       @include mixin.responsive("sm") {
-        font-size: 1rem;
+        font-size: 0.875rem;
       }
     }
 
