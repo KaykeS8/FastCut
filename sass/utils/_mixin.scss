@@ -6,6 +6,7 @@
   margin: 0 auto;
 }
 
+// Classa do container do site
 .container {
   @include container();
 }
@@ -30,5 +31,29 @@
   } @else {
     @error 'No value found for `#{$breakpoint}`. '
          + 'Please make sure it is defined in `$breakpoints` map.';
+  }
+}
+
+.second-title {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font: bold 3rem/1 "Libre Baskerville", sans-serif;
+  margin-bottom: 60px;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 100px;
+    height: 6px;
+    background-color: variables.$p1;
+  }
+
+  @include responsive("sm") {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    &::before {
+      display: none;
+    }
   }
 }
