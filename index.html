@@ -71,8 +71,8 @@
     </div>
   </main>
 
-  <section class="servicos container cor-1">
-    <h2 class="cor-1">Serviços</h2>
+  <section class="servicos container cor-1" aria-label="Serviços">
+    <h2 class="second-title cor-1">Serviços</h2>
     <div class="servicos-image">
       <div>
         <img src="./img/barber1.jpg" alt="barbeiro-1">
@@ -138,7 +138,66 @@
     </div>
   </section>
 
-  <script src="./js/plugins/simple-anime.js"></script>;
+  <article class="barbeiros container">
+    <h2 class="second-title cor-1">Barbeiros</h2>
+    <div class="barbeiros-group">
+      <div class="barbeiros-item">
+        <img src="img/danilo.png" alt="barbeiro Danilo">
+        <span class="cor-1">Danilo</span>
+        <span class="cor-7 barbeiros-exp">5 anos de experiência</span>
+      </div>
+      <div class="barbeiros-item">
+        <img src="img/roberto.png" alt="barbeiro roberto">
+        <span class="cor-1">Roberto</span>
+        <span class="cor-7 barbeiros-exp">7 Anos de experiência<span>
+      </div>
+      <div class="barbeiros-item">
+        <img src="img/marcelo.png" alt="barbeiro marcelo">
+        <span class="cor-1">Marcelo</span>
+        <span class="cor-7 barbeiros-exp">8 Anos de experiência</span>
+      </div>
+      <div class="barbeiros-item">
+        <img src="img/daniel.png" alt="barbeiro Daniel">
+        <span class="cor-1">Daniel</span>
+        <span class="cor-7 barbeiros-exp">12 Anos de experiência</span>
+      </div>
+    </div>
+  </article>
+
+
+  <article class="produtos container">
+    <h2 class="second-title cor-1">Produtos</h2>
+    <div class="produtos-group">
+      <div class="produtos-item col-1">
+        <img src="img/produto1.jpg" alt="Kit de cabelo">
+        <div class="produtos-info">
+          <span>kit da barbeiro</span>
+          <span>R$ 500</span>
+        </div>
+      </div>
+      <div class="produtos-item">
+        <picture>
+          <source srcset="img/produto2-g.jpg" media="(max-width:800px)">
+          <img src="img/produto2.jpg" alt="Secador">
+        </picture>
+        <div>
+          <span>Secador</span>
+          <span>R$ 150</span>
+        </div>
+      </div>
+      <div class="produtos-item">
+        <picture>
+          <source srcset="img/produto3-g.jpg" media="(max-width:800px)">
+          <img src="img/produto3.jpg" alt="Pomada modeladora">
+        </picture>
+        <div>
+          <span>Pomada</span>
+          <span>R$ 60</span>
+        </div>
+      </div>
+    </div>
+  </article>
+
   <script src="./js/script.js"></script>
 </body>
 
