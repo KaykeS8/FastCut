@@ -1,0 +1,47 @@
+@use "../utils/mixin";
+@use "../utils/variables";
+
+.contato {
+  @include mixin.flex-center(center, column);
+  margin-bottom: 120px;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+
+    label {
+      font-family: variables.$font-2;
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+
+    input {
+      border: 2px solid variables.$p1;
+      padding: 10px;
+      margin-bottom: 30px;
+      color: variables.$c1;
+
+      &:focus {
+        background-color: rgba(153, 131, 108, 0.3);
+      }
+    }
+
+    textarea {
+      border: 2px solid variables.$p1;
+      color: variables.$c1;
+      padding: 10px;
+      resize: none;
+      font-family: variables.$font-1;
+      margin-bottom: 30px;
+    }
+
+    button {
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      font-weight: 400;
+      cursor: pointer;
+    }
+  }
+}

@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style.min.css">
   <title>Fast Cut</title>
 </head>
 
@@ -27,15 +27,15 @@
         <nav class="header-nav" aria-label="primaria">
           <ul class="cor-3">
             <li><a href="#">Home</a></li>
-            <li><a href="#" class="cor-p2">Produtos</a></li>
-            <li><a href="#">Barbeiros</a></li>
-            <li><a href="#">Serviços</a></li>
+            <li><a href="#produtos" class="cor-p2">Produtos</a></li>
+            <li><a href="#barbeiros">Barbeiros</a></li>
+            <li><a href="#servicos">Serviços</a></li>
           </ul>
         </nav>
       </div>
       <div class="header-divider">
-        <img src="./img/icones/shop.svg" alt="shop">
-        <a href="#" class="botao inline">Contato</a>
+        <img src="./img/icones/shop.svg" width="24" height="24" alt="shop">
+        <a href="#contato" class="botao inline">Contato</a>
       </div>
     </div>
   </header>
@@ -43,14 +43,14 @@
   <main class="introducao-bg">
     <div class="introducao container">
       <div class="introducao-conteudo">
-        <h1 class="cor-1">Cortes precisos
+        <h1 class="cor-1 fadeInDown" data-anime="400">Cortes precisos
           e acabamentos impecáveis</h1>
-        <p class="cor-5 font-1-x">Somos especialistas em cortes de cabelo e barba tradicionais, mas também oferecemos tendências modernas. Nossa equipe altamente treinada garantirá que você saia da nossa barbearia com um visual incrível.</p>
-        <div class="introducao-btns">
+        <p class="cor-5 font-1-x fadeInDown" data-anime="600">Somos especialistas em cortes de cabelo e barba tradicionais, mas também oferecemos tendências modernas. Nossa equipe altamente treinada garantirá que você saia da nossa barbearia com um visual incrível.</p>
+        <div class="introducao-btns fadeInDown" data-anime="800">
           <a href="#" class="botao  cor-15">Contato</a>
           <a href="#" class="botao inline-p  cor-1">Produtos</a>
         </div>
-        <ul class="introducao-info">
+        <ul class="introducao-info fadeInDown" data-anime="800">
           <li>
             <div><span class="cor-p1">+</span>10</div>
             <div>Anos de experiência</div>
@@ -65,25 +65,25 @@
           </li>
         </ul>
       </div>
-      <div class="introducao-image">
-        <img src="img/imgHeader.jpg" alt="Imagem de homem cortando a barba">
+      <div class="introducao-image fadeInDown" data-anime="1000">
+        <img src="img/imgHeader.jpg" width="560" height="731" alt="Imagem de homem cortando a barba">
       </div>
     </div>
   </main>
 
-  <section class="servicos container cor-1" aria-label="Serviços">
-    <h2 class="second-title cor-1">Serviços</h2>
+  <section class="servicos container cor-1" aria-label="Serviços" id="servicos">
+    <h2 class=" second-title cor-1">Serviços</h2>
     <div class="servicos-image">
       <div>
-        <img src="./img/barber1.jpg" alt="barbeiro-1">
+        <img src="./img/barber1.jpg" width="360" height="529" alt="barbeiro-1">
         <span>Corte De Cabelo</span>
       </div>
       <div>
-        <img src="./img/barber2.jpg" alt="barbeiro-1">
+        <img src="./img/barber2.jpg" width="360" height="529" alt="barbeiro-1">
         <span>Massagem Facial</span>
       </div>
       <div>
-        <img src="./img/barber3.jpg" alt="barbeiro-1">
+        <img src="./img/barber3.jpg" width="360" height="529" alt="barbeiro-1">
         <span>Corte De Barba</span>
       </div>
     </div>
@@ -138,26 +138,26 @@
     </div>
   </section>
 
-  <article class="barbeiros container">
+  <article class="barbeiros container" id="barbeiros">
     <h2 class="second-title cor-1">Barbeiros</h2>
     <div class="barbeiros-group">
       <div class="barbeiros-item">
-        <img src="img/danilo.png" alt="barbeiro Danilo">
+        <img src="img/danilo.png" width="200" height="200" alt="barbeiro Danilo">
         <span class="cor-1">Danilo</span>
         <span class="cor-7 barbeiros-exp">5 anos de experiência</span>
       </div>
       <div class="barbeiros-item">
-        <img src="img/roberto.png" alt="barbeiro roberto">
+        <img src="img/roberto.png" width="200" height="200" alt="barbeiro roberto">
         <span class="cor-1">Roberto</span>
         <span class="cor-7 barbeiros-exp">7 Anos de experiência<span>
       </div>
       <div class="barbeiros-item">
-        <img src="img/marcelo.png" alt="barbeiro marcelo">
+        <img src="img/marcelo.png" width="200" height="200" alt="barbeiro marcelo">
         <span class="cor-1">Marcelo</span>
         <span class="cor-7 barbeiros-exp">8 Anos de experiência</span>
       </div>
       <div class="barbeiros-item">
-        <img src="img/daniel.png" alt="barbeiro Daniel">
+        <img src="img/daniel.png" width="200" height="200" alt="barbeiro Daniel">
         <span class="cor-1">Daniel</span>
         <span class="cor-7 barbeiros-exp">12 Anos de experiência</span>
       </div>
@@ -165,11 +165,11 @@
   </article>
 
 
-  <article class="produtos container">
+  <article class="produtos container" id="produtos">
     <h2 class="second-title cor-1">Produtos</h2>
     <div class="produtos-group">
       <div class="produtos-item col-1">
-        <img src="img/produto1.jpg" alt="Kit de cabelo">
+        <img src="img/produto1.jpg" width="747" height="532" alt="Kit de cabelo">
         <div class="produtos-info">
           <span>kit da barbeiro</span>
           <span>R$ 500</span>
@@ -178,7 +178,7 @@
       <div class="produtos-item">
         <picture>
           <source srcset="img/produto2-g.jpg" media="(max-width:800px)">
-          <img src="img/produto2.jpg" alt="Secador">
+          <img src="img/produto2.jpg" width="360" height="256" alt="Secador">
         </picture>
         <div>
           <span>Secador</span>
@@ -188,7 +188,7 @@
       <div class="produtos-item">
         <picture>
           <source srcset="img/produto3-g.jpg" media="(max-width:800px)">
-          <img src="img/produto3.jpg" alt="Pomada modeladora">
+          <img src="img/produto3.jpg" width="360" height="256" alt="Pomada modeladora">
         </picture>
         <div>
           <span>Pomada</span>
@@ -198,6 +198,46 @@
     </div>
   </article>
 
+  <article class="contato container" id="contato">
+    <h2 class="second-title contat cor-1">Contato</h2>
+    <form>
+      <label for="nome" class="cor-5">Nome</label>
+      <input type="text" id="nome" name="nome">
+
+      <label for="email" class="cor-5">Email</label>
+      <input type="email" name="email" id="email">
+
+      <label for="mensagem" class="cor-5">mensagem</label>
+      <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+      <button class="botao cor-15">Enviar</button>
+    </form>
+  </article>
+
+  <footer class="footer-bg">
+    <div class="footer container">
+      <a href="#" class="logo">fast <span class="cor-p1">cut</span></a>
+      <div class="footer-info">
+        <h3 class="cor-1">Informações</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#servicos">Servicos</a></li>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#barbeiros">Barbeiros</a></li>
+        </ul>
+      </div>
+      <div class="footer-contato">
+        <h3 class="cor-1">Contato</h3>
+        <a class="cor-9" href="tel:+55 31 9999-9999">+55 31 9999-9999</a>
+        <div class="footer-redes">
+          <img src="img/icones/instagram.svg" width="24" height="24" alt="instagram">
+          <img src="img/icones/facebook.svg" width="24" height="24" alt="Facebook">
+          <img src="img/icones/youtube.svg" width="24" height="24" alt="youtube">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/plugins/simple-anime.js"></script>
   <script src="./js/script.js"></script>
 </body>
 

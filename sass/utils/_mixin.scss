@@ -34,7 +34,7 @@
   }
 }
 
-.second-title {
+@mixin title {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -53,6 +53,30 @@
     font-size: 2rem;
     margin-bottom: 40px;
     &::before {
+      display: none;
+    }
+  }
+}
+
+.second-title {
+  @include title();
+}
+
+.second-title.contat {
+  text-transform: uppercase;
+  justify-content: center;
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 100px;
+    height: 6px;
+    background-color: variables.$p1;
+  }
+
+  @include responsive("sm") {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    &::after {
       display: none;
     }
   }
